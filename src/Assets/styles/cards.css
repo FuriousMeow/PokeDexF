@@ -1,0 +1,96 @@
+.pokemon-card-container {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.pokemon-card {
+  width: fit-content;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 69, 0, 0.4);
+  cursor: help;
+  transition: box-shadow 0.3s ease;
+}
+
+.pokemon-card:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 0 16px rgba(255, 69, 0, 0.6);
+}
+
+.pokemon-card img {
+  width: 185px;
+  height: 185px;
+  object-fit: cover;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.pagination ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  margin-right: 8px;
+}
+
+.pagination button {
+  border: none;
+  background-color: transparent;
+  color: #004084;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.pagination button:hover {
+  color: #0056b3;
+}
+
+.pagination .Mui-selected button {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #004084;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+select:hover {
+  background-color: #e8e8e8;
+}
+
+select:focus {
+  outline: none;
+  background-color: #fff;
+  color: #007bff;
+}
